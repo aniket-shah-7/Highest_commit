@@ -5,6 +5,10 @@ on:
     - cron: '*/1 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   self-commit:
     runs-on: ubuntu-latest
