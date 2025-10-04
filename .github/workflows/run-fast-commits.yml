@@ -27,5 +27,5 @@ jobs:
 
       - name: Run fast_commits
         env:
-          COMMITS: 500  # Change this number when running manually
+          COMMITS: 5000000  # Change this number when running manually
         run: ./fast_commits
