@@ -1,9 +1,9 @@
 name: Run fast_commits
 
 on:
-  workflow_dispatch:   # manual trigger from GitHub UI
-  push:
-    branches: [ main ] # runs automatically on push to main
+  workflow_dispatch:   # run manually to avoid accidental spam
+  # push:
+  #   branches: [ main ] # uncomment if you want auto-run on push
 
 jobs:
   build-and-run:
@@ -14,13 +14,18 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: true
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/aniket-shah-7/workflow-commit.git
 
       - name: Compile fast_commits.rs
         run: rustc fast_commits.rs -o fast_commits
 
       - name: Run fast_commits
+        env:
+          COMMITS: 500  # Change this number when running manually
         run: ./fast_commits
