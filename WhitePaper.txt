@@ -1,0 +1,56 @@
+OPEN COLLAB WHITEPAPER
+Purpose
+
+This repository is open for anyone to edit, improve, or expand.
+You can fix typos, add ideas, rewrite sections, or contribute new content.
+All changes happen through pull requests (PRs).
+
+How to Contribute
+
+Fork this repository.
+
+Clone your fork:
+
+git clone https://github.com/aniket-shah-7/Highest_commit.git
+
+
+Create a new branch:
+
+git checkout -b your-branch-name
+
+
+Edit files and commit changes:
+
+git add .
+git commit -m "describe your change"
+
+
+Push and create a PR:
+
+git push origin your-branch-name
+
+
+Go to GitHub → “Compare & pull request” → submit your PR.
+
+Rules
+
+Be respectful and constructive.
+
+Do not remove license or credits.
+
+Avoid harmful or illegal content.
+
+All contributions are reviewed before merging.
+
+Review Process
+
+Maintainers or community members will review your PR.
+
+Simple fixes may be merged quickly.
+
+Bigger changes may need discussion.
+
+License
+
+All contributions are accepted under this repo’s license.
+By submitting a PR, you agree your work can be merged and shared.
