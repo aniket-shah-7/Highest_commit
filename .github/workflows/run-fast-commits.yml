@@ -1,0 +1,26 @@
+name: Run fast_commits
+
+on:
+  workflow_dispatch:   # manual trigger from GitHub UI
+  push:
+    branches: [ main ] # runs automatically on push to main
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Compile fast_commits.rs
+        run: rustc fast_commits.rs -o fast_commits
+
+      - name: Run fast_commits
+        run: ./fast_commits
