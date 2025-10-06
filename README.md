@@ -12,22 +12,6 @@ The project showcases the extremes of Git’s performance under massive commit l
 
 ---
 
-## 📘 About This Repo
-- Contains an **automation script** that performs continuous empty commits.
-- Built as an **experimental stress test** for Git and GitHub.
-- Demonstrates how repositories behave under **extreme commit volumes**.
-- Created for educational and experimental purposes.
-
----
-
-## ⚙️ Technical Highlights
-- Auto-commit script written for efficiency and scalability.
-- Tested over millions of commits in a single session.
-- Demonstrates Git’s internal object storage and performance under stress.
-- Useful for developers studying Git internals or large-scale CI/CD experiments.
-
----
-
 ## 💡 Support the Project
 If you find this project interesting or inspiring:
 - ⭐ **Star** the repo to show your support.
