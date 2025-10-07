@@ -26,6 +26,7 @@ Pushing Git to its absolute limits! 🚀
 ## 🤝 Contributing
 
 Everyone is welcome to contribute — whether it’s fixing text, improving scripts, or adding documentation.
+Feel free to contribute
 
 ### 🔧 How to Create a Pull Request
 1. **Fork** this repository.  
